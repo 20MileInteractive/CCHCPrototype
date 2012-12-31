@@ -1,8 +1,100 @@
 // this is the base stylesheet
 
+$blueDark:              #003058;
+$blueLight:				#07aae0;
+$blueLighter:			#51c4e3;
+$green:					#bfd532;
+$cchcFontFamily: "news-gothic-std", Helvetica, Tahoma, "Nimbus Sans", Arial, sans-serif;
+
 @import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
 
 body {
-	background-color: red;
+	background: $white;
+}
+#main-header {
+	background: $blueDark;
+	header {
+	
+		h1 {
+			width: 322px;
+			height: 58px;
+			float: left;
+			margin: 26px 0;
+		
+			a {
+				background: url(images/CCHC_Horz_tag_logo_322.png);
+				width: 322px;
+				height: 58px;
+				display: block;
+			}
+			
+			span {
+				display: none;
+			}
+		}
+		
+		h2 {
+			display: none;
+		}
+		
+	}
+	ul {
+		font-family: $cchcFontFamily;
+		margin: 23px 0;
+		width: 150px;
+		
+		li {
+			padding: 0 0 0 33px;
+			line-height: 24px;
+			font-size: 12px;
+		
+			&#header_cchc {
+			    background: url(images/heart-icon.png) no-repeat 5px 0 $green;
+			    margin: 0 0 10px 0;
+			    -webkit-border-radius: 5px 5px 0px 0px;
+			    border-radius: 5px 5px 0px 0px;
+			}
+			
+			&#header_mycc {
+			    background: url(images/mycchc-icon.png) no-repeat 5px 0 $blueLighter;
+			    -webkit-border-radius: 0px 0px 5px 5px;
+			    border-radius: 0px 0px 5px 5px;
+			}
+			
+			a {
+				color: $blueDark;
+			}
+		}
+	}
+}
+
+#main-nav {
+	background: $blueLight;
+	border-bottom: solid 1px $blueDark;
+	padding: 5px 0;
+	
+	ul {
+		list-style: none;
+		margin: 0 0 0 -6px;
+		
+		li {
+			float: left;
+			line-height: 32px;
+			margin: 0;
+			padding: 0 8px 0 6px;
+			background: url(images/nav-bg.png) no-repeat right center;
+			
+			&.last {
+				background: none;
+			}
+			
+			a {
+				color: $white;
+			}
+		}
+		ul {
+			display: none;
+		}
+	}
 }
