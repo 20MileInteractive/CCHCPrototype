@@ -8,6 +8,7 @@ $cchcFontFamily: "news-gothic-std", Helvetica, Tahoma, "Nimbus Sans", Arial, san
 
 @import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
+@import "compass/css3/box-shadow";
 
 body {
 	background: $white;
@@ -43,6 +44,7 @@ body {
 		font-family: $cchcFontFamily;
 		margin: 23px 0;
 		width: 150px;
+		float: right;
 		
 		li {
 			padding: 0 0 0 33px;
@@ -92,9 +94,54 @@ body {
 			a {
 				color: $white;
 			}
+			
+			&:hover {
+				ul {
+					display: block;
+				}
+			}
 		}
 		ul {
+			position: absolute;
 			display: none;
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			
+			li {
+				float: none;
+				background: $blueDark;
+				line-height: 19px;
+				padding: 5px;
+			
+				&:hover {
+					ul {
+						display: block !important;
+					}
+				}
+			}
+			
+			ul {
+				display: none !important;
+				position: absolute;
+				left: 200px;
+				margin-top: -24px;
+			}
+		}
+	}
+	
+	form {
+		margin: 4px 0;
+		float: right;
+		
+		input {
+			height: 23px;
+			margin: 0;
+			padding: 0 20px 0 5px;
+			@include box-shadow((2px 2px 4px #000 inset, 0 2px 4px rgba(255,255,255,.3)));
+			border: none;
+			background: url(images/search-icon.png) no-repeat right center $white;
+			width: 200px;
 		}
 	}
 }
