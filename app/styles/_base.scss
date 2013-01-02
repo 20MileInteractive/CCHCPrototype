@@ -81,6 +81,8 @@ body {
 	border-bottom: solid 1px $blueDark;
 	padding: 5px 0;
 	font-size: 0.938em;
+	position: relative;
+	z-index: 999;
 	
 	ul {
 		list-style: none;
@@ -154,6 +156,7 @@ body {
 #home-gradient {
 	height: 374px;
 	@include background-image(linear-gradient(left, #6eb4d3, white)); 
+	@include box-shadow((inset 0px -9px 4px 0px rgba(18, 51, 88, .3)));
 	position: absolute;
 	width: 100%;
 	z-index: -1;
@@ -169,10 +172,17 @@ body {
 }
 #carousel-screenshots {
 	position: relative;
+	@include box-shadow((0 0 3px 1px #555, 0 0 3px 1px rgba(0,0,0,.3)));
+	@include border-radius(0px 20px 0px 0px);
+	overflow: hidden;
+	.item img {
+		width:100%;
+		@include border-radius(0px 20px 0px 0px);
+	}
 	.carousel-nav {
 		position: absolute;
-		top: 290px;
-		right: 80px;
+		bottom: 10%;
+		left: 75%;
 	
 		a {
 			display:block;

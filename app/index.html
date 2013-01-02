@@ -222,35 +222,23 @@
 						</div>
 					</div>
 						
-						<script type="text/javascript">
-						  $(document).ready() {
-						        $('#carousel-screenshots').carousel();
-						
-						        $(".carousel-nav a").click(function(e){
-						            e.preventDefault();
-						            var index = parseInt($(this).attr('data-to'));
-						            $('#carousel-screenshots').carousel(index);
-						            var nav = $('.carousel-nav');
-						            var item = nav.find('a').get(index);
-						            nav.find('a.active').removeClass('active');
-						            $(item).addClass('active');
-						        });
-						
-						        $("#carousel-screenshots").bind('slide', function(e) {
-						          var elements = 4; // change to the number of elements in your nav
-						          var nav = $('.carousel-nav');
-						          var index = $('#carousel-screenshots').find('.item.active').index();
-						          index = (index == elements - 1) ? 0 : index + 1;
-						          var item = nav.find('a').get(index);
-						          nav.find('a.active').removeClass('active');
-						          $(item).addClass('active');
-						        });
-						  });
-						</script>
-						
 						
 							                    
                 </div>
+                <div class="span4">
+                    <aside>
+                        <h2>We're taking good care of our cancer patients.</h2>
+                    </aside>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="span7">
+            	<h2>A Network of Care Close to Home</h2>
+            	<p>As Southeastern Massachusetts’ leading healthcare provider, Cape Cod Healthcare understands the significant impact that a diagnosis of cancer can have on the patient and the family. Patients are likely to experience a wide range of concerns and emotions that will require the skills of a talented, multidisciplinary team of cancer specialists.</p>
+
+            	<p>ANow, thanks to Cape Cod Healthcare’s Regional Cancer Network, the skills and technology found in the most advanced cancer institutions in the nation are available right here. Our team approach brings together trained specialists in medical oncology, 
+radiation oncology, surgery, radiology, pathology, nursing, and social work. The team works to provide the most efficient methods to treat cancer based on your individual needs. Trust Cape Cod Healthcare’s Regional Cancer Network to receive the finest cancer care available.</p>
+            	</div>
                 <div class="span4">
                     <aside>
                         <ul>
@@ -326,5 +314,31 @@
     <script src="scripts/vendor/bootstrap/bootstrap-collapse.js"></script>
     <script src="scripts/vendor/bootstrap/bootstrap-tab.js"></script>
     <!-- endbuild -->
+						
+						<script type="text/javascript">
+						  $(document).ready() {
+						        $('#carousel-screenshots').carousel();
+						
+						        $(".carousel-nav a").click(function(e){
+						            e.preventDefault();
+						            var index = parseInt($(this).attr('data-to'));
+						            $('#carousel-screenshots').carousel(index);
+						            var nav = $('.carousel-nav');
+						            var item = nav.find('a').get(index);
+						            nav.find('a.active').removeClass('active');
+						            $(item).addClass('active');
+						        });
+						
+						        $("#carousel-screenshots").bind('slide', function(e) {
+						          var elements = 4; // change to the number of elements in your nav
+						          var nav = $('.carousel-nav');
+						          var index = $('#carousel-screenshots').find('.item.active').index();
+						          index = (index == elements - 1) ? 0 : index + 1;
+						          var item = nav.find('a').get(index);
+						          nav.find('a.active').removeClass('active');
+						          $(item).addClass('active');
+						        });
+						  });
+						</script>
 </body>
 </html>
