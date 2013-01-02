@@ -4,6 +4,7 @@ $blueDark:              #003058;
 $blueLight:				#07aae0;
 $blueLighter:			#51c4e3;
 $green:					#bfd532;
+$grey:					#668c8d;
 $cchcFontFamily: "news-gothic-std", Helvetica, Tahoma, "Nimbus Sans", Arial, sans-serif;
 
 @import "compass_twitter_bootstrap";
@@ -12,6 +13,7 @@ $cchcFontFamily: "news-gothic-std", Helvetica, Tahoma, "Nimbus Sans", Arial, san
 
 body {
 	background: $white;
+	font-family: $sansFontFamily;
 }
 #main-header {
 	background: $blueDark;
@@ -144,4 +146,63 @@ body {
 			width: 200px;
 		}
 	}
+}
+
+#main-footer {
+	@include box-shadow((inset 0px 9px 4px 0px rgba(18, 51, 88, .3)));
+	padding: 35px;
+		
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			color: $grey;
+			
+			a {
+				color: $grey;
+			}
+			
+			lh {
+				font-size: 19px;
+				font-family: $cchcFontFamily;
+			}
+			
+			li {
+				font-size: 10px;
+				line-height: 16px;
+				width: 60%;
+				margin: 0 0 10px 0;
+			}
+			&#social {
+			    float: right;
+			    
+			    li {
+			    	float: left;
+			    	margin: 0 6px 0 0;
+			    	width: auto;
+			    	
+			    	span {
+			    		display: none;
+			    	}
+			    	
+			    	a {
+			    		display: block;
+			    		width: 36px;
+			    		height: 36px;
+			    	}
+			    	
+			    	&#twitter a {
+			    		background: url(images/twitter.png);
+			    	}
+			    	
+			    	&#youtube a {
+			    		background: url(images/youtube.png);
+			    	}
+			    	
+			    	&#facebook a {
+			    		background: url(images/facebook.png);
+			    	}
+			    }
+			}
+		}
 }
