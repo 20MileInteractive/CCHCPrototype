@@ -5,11 +5,15 @@ $blueLight:				#07aae0;
 $blueLighter:			#51c4e3;
 $green:					#bfd532;
 $grey:					#668c8d;
+$greyDark:				#90a9ab;
+$greyLight:				#e2e9e9;
 $cchcFontFamily: "news-gothic-std", Helvetica, Tahoma, "Nimbus Sans", Arial, sans-serif;
+$baseFontSize: 			16px;
 
 @import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
 @import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
 
 body {
 	background: $white;
@@ -56,14 +60,12 @@ body {
 			&#header_cchc {
 			    background: url(images/heart-icon.png) no-repeat 5px 0 $green;
 			    margin: 0 0 10px 0;
-			    -webkit-border-radius: 5px 5px 0px 0px;
-			    border-radius: 5px 5px 0px 0px;
+			    @include border-radius(5px 5px 0px 0px);
 			}
 			
 			&#header_mycc {
 			    background: url(images/mycchc-icon.png) no-repeat 5px 0 $blueLighter;
-			    -webkit-border-radius: 0px 0px 5px 5px;
-			    border-radius: 0px 0px 5px 5px;
+			    @include border-radius(0px 0px 5px 5px);
 			}
 			
 			a {
@@ -77,6 +79,7 @@ body {
 	background: $blueLight;
 	border-bottom: solid 1px $blueDark;
 	padding: 5px 0;
+	font-size: 0.938em;
 	
 	ul {
 		list-style: none;
@@ -147,6 +150,118 @@ body {
 		}
 	}
 }
+
+#breadcrumbs {
+	font-size: .75em;
+	line-height: 2.5em;
+	padding: 0 0 2.5em 0;
+	
+	p {
+		margin: 0;
+	}
+}
+#side-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	
+	lh {
+		background: $greyDark;
+		font-family: $cchcFontFamily;
+		@include border-radius(10px 0 0px 0px);
+		width: 100%;
+		display: block;
+		line-height: 2.125em;
+		
+		a {
+			color: $white;
+			padding: 0 1em 0 0;
+		}
+	}
+	li {
+		border-bottom: solid #c0cece 1px;
+		line-height: 1.75em;
+		
+		a {
+			color: $blueDark;
+			padding: 0 1em 0 0;
+		}
+		
+		&.parent-here {
+			background: $greyLight url(images/here-arrow.png) right top no-repeat;
+			border: none;
+			
+			a {
+				color: $blueLight;
+				font-weight: bold;
+			}
+			
+			li a {
+				color: $greyDark;
+				font-weight: normal;
+			}
+		}
+	}
+	ul {
+		border-top: solid #c0cece 1px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			font-size: .75em;
+			line-height: 1.75em;
+		}
+	}
+	
+}
+#more_info {
+	background: url(images/blue-fade.png) no-repeat;
+	padding: 40px 5px;
+	text-align: center;
+	
+	h1 {
+		font-size: 1.25em;
+		font-weight: normal;
+		margin: 0;
+	}
+}
+#main-content {
+	@include box-shadow((-6px 0 3px -2px #ccc, -6px 0 3px -2px rgba(255,255,255,.1)));
+	
+	#primary_image {
+		width: 100%;
+		max-width: 460px;
+		height: 300px;
+		background-repeat: no-repeat;
+		background-position: center top;
+		@include border-radius(0px 30px 0px 0px);
+		@include box-shadow((1px 1px 2px 2px #ccc, 1px 1px 2px 2px rgba(255,255,255,.1)));
+	}
+	.content-padder {
+		padding: 1.1em 0 1.1em 1.1em;
+	}
+	h1 {
+		color: $blueLight;
+		font-size: 2.2em;
+		line-height: 1.1em;
+		font-family: $cchcFontFamily;
+		margin-top: 0;
+		font-weight: normal;
+	}
+	h2 {
+		color: $grey;
+		font-size: 1.063em;
+		line-height: 1.2em;
+		margin-bottom: 0;
+		font-weight: normal;
+	}
+	p {
+		margin: 0 0 1em 0;
+	}
+}
+
 
 #main-footer {
 	@include box-shadow((inset 0px 9px 4px 0px rgba(18, 51, 88, .3)));
