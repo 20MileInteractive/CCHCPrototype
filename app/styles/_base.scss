@@ -14,6 +14,7 @@ $baseFontSize: 			16px;
 @import "compass_twitter_bootstrap_responsive";
 @import "compass/css3/box-shadow";
 @import "compass/css3/border-radius";
+@import "compass/css3/images";
 
 body {
 	background: $white;
@@ -150,7 +151,46 @@ body {
 		}
 	}
 }
-
+#home-gradient {
+	height: 374px;
+	@include background-image(linear-gradient(left, #6eb4d3, white)); 
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+#site-title {
+	h1 {
+		font-size: 2.25em;
+		font-family: $cchcFontFamily;
+		font-weight: normal;
+		color: $blueDark;
+		margin: 40px 0 10px 0;
+	}
+}
+#carousel-screenshots {
+	position: relative;
+	.carousel-nav {
+		position: absolute;
+		top: 290px;
+		right: 80px;
+	
+		a {
+			display:block;
+			width:13px;
+			height:12px;
+			background: url(images/bullets.png) no-repeat;
+			text-indent:-9999px;
+			border:0;
+			margin-right:3px;
+			float:left;
+			background-position: 0 -12px;
+			
+			&.active {
+				background-position: 0 0;
+			}
+		}
+	}
+}
 #breadcrumbs {
 	font-size: .75em;
 	line-height: 2.5em;
@@ -278,7 +318,25 @@ body {
 	}
 }
 
-
+.sidebox {
+	padding: 7px;
+	margin: 0 0 20px 0;
+	@include box-shadow((0 0 3px 1px #ccc, 0 0 3px 1px rgba(255,255,255,.1)));
+	@include border-radius(10px 10px 0px 0px);
+	
+	h1 {
+		text-align: center;
+		font-size: 1.25em;
+		font-weight: normal;
+		font-family: $cchcFontFamily;
+		margin: 0;
+		color: $grey;
+	}
+	p {
+		margin: 5px 0 0 0;
+	}
+	
+}
 #main-footer {
 	@include box-shadow((inset 0px 9px 4px 0px rgba(18, 51, 88, .3)));
 	padding: 35px;

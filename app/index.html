@@ -195,13 +195,61 @@
             </div>
     	</div>
     </section>
-
+    <div id="home-gradient">
+    </div>
     <div class="container">
 
         <section id="main">
+        	<div class="row">
+        		<div class="span12" id="site-title">
+        			<h1>Cape Cod Healthcare's Regional Cancer Network</h1>
+        		</div>
+        	</div>
             <div class="row">
-                <div class="span8">
-                    content will go here
+                <div class="span7">
+                    <div id="carousel-screenshots" class="carousel slide">
+						<div class="carousel-inner">
+						        <div class="item active"><img src="images/home.jpg" alt="home" width="623" height="343"></div>
+						        <div class="item"><img src="images/home.jpg" alt="home" width="623" height="343"></div>
+						        <div class="item"><img src="images/home.jpg" alt="home" width="623" height="343"></div>
+						        <div class="item"><img src="images/home.jpg" alt="home" width="623" height="343"></div>
+						</div>
+						<div class="carousel-nav">
+						  <a href="#" data-to="0" class="active">1</a>
+						  <a href="#" data-to="1">2</a>
+						  <a href="#" data-to="2">3</a>
+						  <a href="#" data-to="3">4</a>
+						</div>
+					</div>
+						
+						<script type="text/javascript">
+						  $(document).ready() {
+						        $('#carousel-screenshots').carousel();
+						
+						        $(".carousel-nav a").click(function(e){
+						            e.preventDefault();
+						            var index = parseInt($(this).attr('data-to'));
+						            $('#carousel-screenshots').carousel(index);
+						            var nav = $('.carousel-nav');
+						            var item = nav.find('a').get(index);
+						            nav.find('a.active').removeClass('active');
+						            $(item).addClass('active');
+						        });
+						
+						        $("#carousel-screenshots").bind('slide', function(e) {
+						          var elements = 4; // change to the number of elements in your nav
+						          var nav = $('.carousel-nav');
+						          var index = $('#carousel-screenshots').find('.item.active').index();
+						          index = (index == elements - 1) ? 0 : index + 1;
+						          var item = nav.find('a').get(index);
+						          nav.find('a.active').removeClass('active');
+						          $(item).addClass('active');
+						        });
+						  });
+						</script>
+						
+						
+							                    
                 </div>
                 <div class="span4">
                     <aside>
