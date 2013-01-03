@@ -419,6 +419,38 @@ body {
 	}
 	&.sideform {
 		background: $blueLightest;
+		padding-bottom: 0;
+		
+		label {
+			font-size: 0.563em;
+			margin: 0;
+			color: $grey;
+		}
+		p {
+			font-size: 0.563em;
+			text-align: right;
+			margin: 0;
+			color: $grey;
+		}
+		input, textarea {
+			width: 90%;
+			margin: 1em 0 0 0;
+		}
+		#submit_holder {
+			width: 100%;
+			position: absolute;
+			bottom: -10px;
+			input[type="submit"] {
+				color: $blueDark;
+				display: block;
+				margin: 0 auto;
+				width: 50%;
+				font-family: $cchcFontFamily;
+				background: #c1d72e;
+				@include box-shadow((-2px -2px 4px #000 inset, 0 -2px 4px rgba(255,255,255,.3)));
+				border: none;
+			}
+		}
 	}
 	
 }
