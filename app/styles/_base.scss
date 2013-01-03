@@ -3,11 +3,13 @@
 $blueDark:              #003058;
 $blueLight:				#07aae0;
 $blueLighter:			#51c4e3;
+$blueLightest:			#e3f4fb;
 $green:					#bfd532;
 $grey:					#668c8d;
 $greyDark:				#90a9ab;
 $greyLight:				#e2e9e9;
 $cchcFontFamily: "news-gothic-std", Helvetica, Tahoma, "Nimbus Sans", Arial, sans-serif;
+$HelvFontFamily: Helvetica, Tahoma, "Nimbus Sans", Arial, sans-serif;
 $baseFontSize: 			16px;
 
 @import "compass_twitter_bootstrap";
@@ -161,6 +163,14 @@ body {
 	width: 100%;
 	z-index: -1;
 }
+#home-gradient2 {
+	height: 310px;
+	@include background-image(linear-gradient(top, #ecf1f1, #fdfefe)); 
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	bottom: 0;
+}
 #site-title {
 	h1 {
 		font-size: 2.25em;
@@ -168,6 +178,16 @@ body {
 		font-weight: normal;
 		color: $blueDark;
 		margin: 40px 0 10px 0;
+	}
+}
+#home-tagline {
+	h2 {
+		font-size: 1.875em;
+		font-family: $HelvFontFamily;
+		font-weight: normal;
+		line-height: 2em;
+		margin: 20px 0 0 60px;
+		color: $grey;
 	}
 }
 #carousel-screenshots {
@@ -246,6 +266,7 @@ body {
 			a {
 				color: $blueLight;
 				font-weight: bold;
+				display: block;
 			}
 			
 			li a {
@@ -263,6 +284,11 @@ body {
 		li {
 			font-size: .75em;
 			line-height: 1.75em;
+			
+			&.here a {
+				color: $blueLight;
+				font-weight: bold;
+			}
 		}
 	}
 	
@@ -326,6 +352,29 @@ body {
 	p {
 		margin: 0 0 1em 0;
 	}
+	&.home-content {
+		@include box-shadow((0 0 0 0 #fff, 0 0 0 0 rgba(255,255,255,.1)));
+		
+		h2 {
+			margin-bottom: 1em;
+			font-size: 1.5em;
+		}
+	}
+	ul {
+		margin: 0 0 1em 0;
+		
+		li {
+			list-style: none;
+			margin: 5px 5px 0 0;
+			&:before {
+				content: "> ";
+				color: $blueLight;
+				font-family: "Arial Narrow", Tahoma, sans-serif;
+				display: inline-block;
+				width: 25px;
+			}
+		}
+	}
 }
 
 .sidebox {
@@ -333,6 +382,7 @@ body {
 	margin: 0 0 20px 0;
 	@include box-shadow((0 0 3px 1px #ccc, 0 0 3px 1px rgba(255,255,255,.1)));
 	@include border-radius(10px 10px 0px 0px);
+	position: relative;
 	
 	h1 {
 		text-align: center;
@@ -344,6 +394,83 @@ body {
 	}
 	p {
 		margin: 5px 0 0 0;
+	}
+	.tabs {
+		list-style: none;
+		position: absolute;
+		left: 0;
+		bottom: -1.375em;
+		margin: 0px;
+		width: 100%;
+		li {
+			float: left;
+			text-align: center;
+			font-family: $HelvFontFamily;
+			width: 50%;
+			background: $white;
+			font-size: .875em;
+			line-height: 2.313em;
+			@include box-shadow((0 0 3px 1px #ccc, 0 0 3px 1px rgba(255,255,255,.1)));
+			@include border-radius(0 10px 0px 0px);
+		}
+	}
+	&.homeside {
+		padding: 10px;
+	}
+	&.sideform {
+		background: $blueLightest;
+	}
+	
+}
+.tricallout {
+	@include box-shadow((0 0 3px 1px #ccc, 0 0 3px 1px rgba(255,255,255,.1)));
+	@include border-radius(10px 10px 0px 0px);
+	margin: 30px 0;
+	padding: 0 0 10px 0;
+	
+	h1 {
+		@include border-radius(10px 10px 0px 0px);
+		background: $blueDark;
+		color: $white;
+		font-family: $cchcFontFamily;
+		text-align: center;
+		font-size: 1.563em;
+		margin: 0;
+		font-weight: normal;
+	}
+	a {
+		color: $grey;
+	}
+	ul {
+		list-style: none;
+		margin-top: 10px;
+		li {
+			margin: 5px 20px 0 0;
+			font-size: 0.938em;
+			line-height: 1.1em;
+			&:before {
+				content: "> ";
+				color: $blueDark;
+				font-family: "Arial Narrow", Tahoma, sans-serif;
+			}
+		}
+	}
+	p {
+		color: $grey;
+		text-align: center;
+		margin: 1em;
+		font-size: 0.875em;
+	}
+	h4 {
+		color: $grey;
+		text-align: center;
+		margin: .5em 1em;
+		font-size: 0.75em;
+		font-weight: normal;
+		
+		a {
+			color: $blueDark;
+		}
 	}
 	
 }
