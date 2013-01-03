@@ -416,6 +416,9 @@ body {
 	}
 	&.homeside {
 		padding: 10px;
+		p {
+			text-align: center;
+		}
 	}
 	&.sideform {
 		background: $blueLightest;
