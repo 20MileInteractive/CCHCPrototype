@@ -303,6 +303,14 @@ li{
 }
 
 
+#give-money{
+	@include clearfix;
+}
+
+#give-money div{
+	@include span-columns (3);
+}
+
 .button#link1,.button#link2{
 		@include button($md);
 		font-size: 1em;
@@ -649,86 +657,44 @@ div#events div{
 	@include clearfix;
 	}
 
-section#calendar{
-	@include span-columns(5);
+
+
+#events-list{
+	@include span-columns(8);
 	
-		
-	img{
-		width: 100%;
-	}
-}
-
-
-section#news{
-	@include span-columns(7);
-	clear:none;	
-	article{
-		margin-bottom: 2rem;
-		
-		a{
-			@include button(shiny,$dk);
-		}
-	}
-}
-
-div#events-bottom{
-	background: $lt;
-}
-
-section#publications{
-		@include span-columns(8);
-
-}
-
-
-section#publications article{
-	background:url("http://placehold.it/100x100") top left no-repeat;
-	padding-left: 120px;
-	margin-bottom: 2rem;
-	min-height:100px;
-	
-	p,h4{
+	h3,h4{
 		margin: 0;
 		padding: 0;
-	} 
-	
-	input{
-		margin-top: 1rem;
-		padding: .5rem;
+	}
+	h4{
+		font-weight: normal;
+		font-style: italic;
 	}
 	
-	input+a{
-		background:$dk;
-		padding: .5rem;
-		color: #fff;
-		text-decoration: none;
-		
+	section{
+		margin-bottom: 3rem;
 	}
 }
 
-div#events-bottom{
-	
-	margin-top: 2rem;
-}
-section#news-feed{
-		@include span-columns(4);
-		@include omega;
-		
-		aside{
-			padding: 0 10px;
-		}
-		
-		p{
+#events-sidebar{
+			@include span-columns(4);
+			@include omega;
+			background: $lt;
+			border-radius: 15px;
+			padding: .75rem;
 			margin-bottom: 2rem;
-		}
-		span.date{
-			color: $dk;
-			font-size: .8rem;
-			border-bottom: 1px solid $md;
-			display: block;
-			padding-bottom: .2rem;
-			margin-bottom: .5rem;
-					}
+			
+			h4{
+				margin: 0;
+				padding: 0;
+			}
+			
+			h4+p{
+				margin-top: .2rem;
+			}
+			
+			article{
+				margin-bottom: 3rem;
+			}
+			
 }
-
-

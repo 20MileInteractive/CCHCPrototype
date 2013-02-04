@@ -1,30 +1,35 @@
 <?php include "head.php" ?>
 
 <div class="container" id="events">
-	<div>
-					<section id="calendar">
-			<img src="http://placehold.it/500x500&text=Calendar" />			
-		</section>
-		
-		<section id="news">
-			<h1>Events Title</h1>
-			<article>
-				<h3>Sub title</h3>
-				<p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.				
+	<div id="events-list">
+		<h2>Events Page Title</h2>
+			<section>
+				<h3>Event title</h3>
+				<h4>Event Date and Time Info</h4>
+				<p>Event description.Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 				</p>
-				<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.
-				</p>
-				<a href="">Call to Action</a>
-			</article>		
-		</section>
-		
+				<p><a href="">Register for Event</a></p> 
+			</section>	
 
-		
-		
-	</div>
-	
-	<div id="events-bottom">
-	
+			<section>
+				<h3>Event title</h3>
+				<h4>Event Date and Time Info</h4>
+				<p>Event description.Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis.
+				</p>
+				<p><a href="">Register for Event</a></p> 
+			</section>	
+
+			<section>
+				<h3>Event title</h3>
+				<h4>Event Date and Time Info</h4>
+				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+				</p>
+				<p><a href="">Register for Event</a></p> 
+			</section>	
+			
+	</div><!-- end events list-->
+
+	<div id="events-sidebar">
 		<section id="publications">
 			<h3>Publications &amp; Media</h3>
 				<article>
@@ -56,31 +61,10 @@
 				</article>
 			
 		</section>
-		
-		<section id="news-feed">
-		<aside>
-		<h3>Latest News</h3>
-		<p>
-			<span class="date">12 January 2013</span>
-			<a href="">Cape Cod Healthcare Named One of America’s Top Ten Systems</a>
-			
-		</p>
-
-		<p>
-			<span class="date">22 December 2012</span>		
-			<a href="">Protege takes Cape hospital System Reins</a>
-		</p>
-		
-		<p>
-			<span class="date">18 December 2012</span>		
-			<a href="">Risus Ullamcorper Condimentum Nibh</a>
-		</p>
-
-		
-		</aside>
-		</section>
-		
-	</div>
+	</div><!-- end sidebar -->
+</div>
+	
+	
 
 <?php include "bottom-ads.php" ?>	
 </div>

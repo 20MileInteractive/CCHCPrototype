@@ -42,59 +42,43 @@
 		
 </div>
 <div class="container" id="give-money">
-
-	<div class="pane" id="pane1">
-		<h2>&quot;I want to make a planned gift.&quot;</h2>
-			<h3>Planned Giving</h3>
-			<ul>Planned Gifts Include:<br/>
-					<li>Charitably Gift Annuity</li>
-					<li>Life-Income Plans</li>
-					<li>Charitable Lead Trust</li>
-					<li>Another Gift Type</li>
-					<li>Another Gift Type</li>
-
-				</ul>
-			<p>Planned giving options offer many benefits to you and your beneficiaries. There are many ways to donate while retaining income and tax benefits.
-			</p>
-			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</p>
-			
-				
-			</p>
-			
-			<a href="planned-giving.php" class="button">See Types of Planned Gifts</a>
+<h2>Section Title Goes Here</h2>
+	<div>
+		<h3>Volunteer</h3>	
+		<p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+		</p>	
+		<p><a href="">Call To Action Link</a>
+		
+	</div>
 	
-	</div><!-- end pane 1-->
+		<div>
+		<h3>Events</h3>	
+		<p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. 
+		</p>	
+		<p><a href="">Call To Action Link</a>
+		
+	</div>
 
+		<div>
+		<h3>Planned Giving</h3>	
+		<p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		</p>	
+		<p><a href="">Call To Action Link</a>
+		
+	</div>
+
+		<div>
+		<h3>What are you grateful for?</h3>	
+		<p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. 
+		</p>	
+		<p><a href="">Call To Action Link</a>
+		
+	</div>
+
+</div>	
 	
-</div>
 
 
-<div class="container" id="give-time">
-	<h2>&quot;I want to volunteer my time.&quot;</h2>
-	
-	<section>
-		<h4>Join The Auxiliary</h4>
-		<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-		<p><a href="#">Call To Action</a>
-		</p>
-	</section>
-	
-	<section>
-		<h4>Volunteer at CCHC</a></h3>
-		<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-		<p><a href="#">Call To Action</a>
-		</p>
-	</section>
-	
-	<section>
-		<h4>Host an Event</a></h4>
-		<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-		<p><a href="#">Call To Action</a>
-		</p>
-	</section>
-
-
-</div>
 
 <?php include "bottom-ads.php" ?>
 
