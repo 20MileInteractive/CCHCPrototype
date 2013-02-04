@@ -1,0 +1,734 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$lt:#eee;
+$md:#ccc;
+$dk:#666;
+$bk:#111;
+
+$debug: 1px solid red;
+
+body{
+	background: $lt;
+	font-family: $helvetica;
+	width:960px;
+	margin: 0 auto;
+	
+	p{
+			line-height: 1.2em;
+	}
+
+}
+
+hgroup{
+
+	h1{
+		margin: 0;
+		padding: 0;
+	}
+}
+.subhead{
+	font-weight: normal;
+	font-style: italic;
+	margin: 0;
+}
+
+.container{
+	padding: 1em;
+	background: #fff;
+}
+
+.container.md{
+	background: $md;
+}
+
+nav{
+
+margin: 2em 0 1em;
+	
+	a{
+		padding: .5em .8em;
+		background: $lt;
+		border: 1px solid $md;
+		font-size: 1em;
+		
+
+	}
+	
+		#search{
+		background: #fff;
+		color:$md;
+		border-radius:10px;
+		padding-right: 6em;
+		margin-left: .8em;
+		text-decoration: none;
+
+		}
+	
+}
+
+a#donate{
+	@include button (shiny, $dk);
+	float:right;
+	padding: 1em 3em;
+	
+}
+
+
+#top,#middle{
+	margin: 2em 0;
+	background: #fff;
+	@include outer-container;
+}
+
+#middle{
+	background: $md;
+}
+
+#slideshow{
+	background: $lt url('../img/avatar.png') top right no-repeat;
+	height:250px;
+	padding: 2rem;
+	margin-bottom: 2em;
+	border-radius:10px;
+
+	
+	a{
+		@include button(shiny, $md);
+		color:#fff;
+		text-shadow: none;	
+	}
+
+	a+a{
+		@include button(shiny, $dk);
+		margin-left:25px;	
+	}
+
+}
+
+#boxes:hover .box{
+	opacity: .4;
+	@include transition(all .2s);
+}
+
+.box{
+	@include span-columns(4);
+	background: $lt;
+	border-radius:10px;
+	padding:.5em;
+	
+	
+	img{
+		text-align: center;
+		margin: .5em auto;
+		display: block;
+	}	
+	
+	h3{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+#boxes:hover .box:hover{
+		opacity:1;
+
+}
+
+
+.box+.box+.box{
+	@include omega();
+}
+
+
+#bottom-half{
+	background: $md;
+	border: $debug;
+	@include clearfix;
+}
+
+#home-news{
+	clear: both;
+	@include span-columns (8);
+	
+	h3{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+#subscribe{
+	border-radius:10px;
+	@include span-columns (4);
+	
+	h4{
+		margin: 0;
+		padding: 0;
+	}
+	
+	img{
+		float: left;
+		margin-right:10px;
+		}
+		
+	a{
+		background: #fff;
+		padding: 5px;
+		margin-top: 10px;
+		display: inline-block;
+		width: 100%;
+		text-decoration: none;
+	border-radius:5px;
+	}
+
+}
+footer{
+	text-align: center;
+	color: $dk;
+}
+
+
+// +++++++++++++++++++++++ Giving Page
+
+#give-top{
+	@include clearfix;
+}
+
+#intro{
+	@include span-columns (9);
+}
+
+#current-campaign{
+	@include span-columns (3);
+	background: $lt;
+	border-radius:10px;
+	text-align: center;
+	padding: 0 0 1.5em;
+	border:2px solid $md;
+}
+
+
+#give-money,#give-time{
+	background: $md;
+	padding: 1em;
+	@include clearfix;
+	
+	h2{
+		margin: 0;
+		padding: .5em 0 1em 0;
+		border-bottom: 2px solid darken($md,10%);
+	}
+	
+	p,li{
+		color: $dk;
+	}
+	section{
+		@include span-columns (6);
+	}
+	
+
+
+	p+a{
+		@include button(shiny,$dk);
+		color: #fff;
+		text-shadow: 0;
+		border-color: $dk;
+		font-weight: normal;
+		margin:1em 0 2em;
+	}
+}
+
+ul{
+		margin: 0;
+		padding-left: 0;
+		list-style-position: inside;
+		font-weight: bold;
+
+}
+	
+li{
+		margin-top: .5em;
+}
+
+
+#give-time{
+	background: lighten($md,7%);
+	padding: 1em;
+	@include clearfix;
+	
+
+	section{
+		@include span-columns (4);
+	}
+	
+	
+}
+
+#giving-bottom{
+	@include clearfix;
+
+	section{
+		margin: 2em 0;
+		@include span-columns (6);
+		img{
+			float: left;
+			margin: 0 10px 10px 0;
+		}
+		
+		h4{
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+
+#give-now{
+
+
+	background: darken($md,7%);
+	@include clearfix;
+	
+	a{
+		@include button(shiny, $dk);
+
+	}
+
+		h2{
+		margin: 0;
+		padding: .5em 0 .5em 0;
+		border-bottom: 2px solid darken($md,15%);
+	}	
+
+}
+
+
+.button#link1,.button#link2{
+		@include button($md);
+		font-size: 1em;
+}
+
+
+#give-now div{
+	@include span-columns (4);
+}
+
+#pane1 ul{
+	float: right;
+	margin-left: 40px;
+}
+
+// +++++++++++++++++++++++ Planned Giving Page
+
+
+div#planned-giving{
+	@include clearfix;
+}
+
+div#planned-gift-types section{
+	@include clearfix;
+	background: $lt;
+	border-radius: 10px;
+	padding: .5rem 1rem;
+	margin-bottom: 1.5rem;
+	
+	h2{
+		@include span-columns (12);
+		padding: .5rem 0;
+		margin: 0;
+		font-size: 1.5rem;
+		text-decoration: none;
+		
+		a{
+			display: block;
+			text-decoration: none;
+		
+			span{
+				float: right;
+			}
+		
+		}
+		
+	}
+	
+	
+	
+	div{
+		@include clearfix;
+		clear: both;
+	}
+}
+
+p.gift-detail{
+	@include span-columns (7);
+	span{
+		font-weight: bold;
+		display: block;
+		width: 100%;
+		padding-bottom: .5rem;
+		margin-bottom: .5rem;
+	}
+}
+
+p.gift-benefit{
+	@include span-columns (4);
+	@include shift(1);
+	@include omega();
+	color:$dk;
+	span{
+		font-weight: bold;
+		display: block;
+		width: 100%;
+		padding-bottom: .5rem;
+		margin-bottom: .5rem;
+	}
+}
+
+
+div.gift{
+	border-bottom: 2px solid $md;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+}
+
+div.gift:last-child{
+	border-bottom: 0;
+	padding-bottom: 1rem;
+}
+
+// +++++++++++++++++++++++ Lightkeepers Page
+
+#lightkeeper-top{
+	@include clearfix;
+	
+
+}
+#lightkeeper-content{
+	@include span-columns (9);
+	
+
+
+}
+
+.smaller{
+		font-size: .8em;
+		color: $dk;
+}
+	
+#lightkeeper-sidebar{
+	@include span-columns (3);
+	border-radius:10px;
+	background: $lt;
+
+	
+	h3{
+		margin: 0;
+		
+	}
+	
+	aside{
+		padding:1em;
+	}
+	p:last-child{
+		line-height: 1.3em;
+	}
+	.btn{
+		@include button (shiny,$dk);
+		display: block;
+		text-align: center;
+	}
+	
+	
+}
+
+.liaison{
+	@include span-columns (3 of 9);
+	margin-top:1.6em;
+}
+
+
+
+// +++++++++++++++++++++++ About Page
+
+#team{
+	@include clearfix;
+}
+
+
+section.team{
+		@include span-columns (6);
+		margin-bottom: 2em;
+		
+
+	img{
+		float:left;
+		padding-right:15px;
+
+	}
+}
+
+.team-group{
+	clear: both;
+	
+	h3{
+		border-bottom: 2px solid $lt;
+		padding: 2em 0 .5em;
+		display: block;
+	}
+}
+section.team:nth-child(odd){
+	@include omega;
+}
+
+
+#who-we-are #giving-bottom{
+	background:$lt;
+
+}
+
+
+// +++++++++++++++++++++++ Contact Page
+
+
+div#contact{
+	@include clearfix;
+	
+	>section{
+		margin-top: 2em;
+	}
+}
+#contact-info{
+		@include span-columns (3);
+		
+		h4{
+			border-bottom: 2px solid $lt;
+			margin: 0 0 1em;
+			padding-bottom: .5em;
+		}
+}
+
+#contact-form{
+		@include span-columns (6);
+		
+		form{
+			padding: 0 2em;
+		}
+	
+		input,textarea,label{
+			display: block;
+			width: 100%;
+			resize: none;
+		}
+		
+		input,textarea{
+			border:1px solid $md;
+			padding: .5em;
+			margin-bottom: 1.5em;
+
+		}
+
+}
+
+
+input[type="submit"]{
+		@include button(shiny,$dk);
+}
+
+
+#contact-sidebar{
+		@include span-columns (3);
+		@include omega;
+		border-radius:10px;
+		background: $lt;
+		padding: 1em;
+		
+		h3{
+			border-bottom: 2px solid $md;
+			margin: 0 0 1em;
+			}
+		
+		a{
+			margin: 1em 0;
+			display: block;
+		}
+		
+		p.answer{
+			display:none;
+		}
+}
+
+#donate form{
+			@include span-columns (8);
+
+			h2{
+				margin: 0;
+
+
+			}
+
+			h4{
+				margin:0;
+				
+				
+			}
+			
+			input[type="checkbox"]{
+				margin-right:1em;
+			}
+			
+}
+
+form section{
+	padding: 1em;
+	margin: 0 0 2em 0;
+	background: $lt;
+	border-radius:10px;
+	
+	label{
+		display: block;
+		margin-bottom: .7em;
+	}
+	
+	div{
+		margin-top:1em;
+		border-top:2px solid $md;
+		padding-top:1em;
+		@include clearfix;
+		
+	}
+	
+	.hidden{
+		display: none;
+		padding: 0;
+	}
+	
+	div.column{
+		border:0;
+		margin:0;
+		@include span-columns (4 of 8);
+		
+		input{
+			display: block;
+			width: 80%;
+
+		}
+
+	}
+}
+
+
+.required{
+	font-size: 80%;
+	color:$dk;
+	font-weight: normal;
+	margin: 0 0 .5em 0;
+}
+
+
+#give-money .giving-lt{
+		@include span-columns (2);
+		margin-top:180px;
+		text-align: center;
+
+		a{
+			@include button($md);
+			font-size: inherit;
+		}
+}
+
+#give-money .giving-rt{
+			@include span-columns (9);
+			@include omega;
+			@include shift(1);
+
+}
+
+// +++++++++++++++++++++++ Events Page
+
+div#events div{
+	@include clearfix;
+	}
+
+section#calendar{
+	@include span-columns(5);
+	
+		
+	img{
+		width: 100%;
+	}
+}
+
+
+section#news{
+	@include span-columns(7);
+	clear:none;	
+	article{
+		margin-bottom: 2rem;
+		
+		a{
+			@include button(shiny,$dk);
+		}
+	}
+}
+
+div#events-bottom{
+	background: $lt;
+}
+
+section#publications{
+		@include span-columns(8);
+
+}
+
+
+section#publications article{
+	background:url("http://placehold.it/100x100") top left no-repeat;
+	padding-left: 120px;
+	margin-bottom: 2rem;
+	min-height:100px;
+	
+	p,h4{
+		margin: 0;
+		padding: 0;
+	} 
+	
+	input{
+		margin-top: 1rem;
+		padding: .5rem;
+	}
+	
+	input+a{
+		background:$dk;
+		padding: .5rem;
+		color: #fff;
+		text-decoration: none;
+		
+	}
+}
+
+div#events-bottom{
+	
+	margin-top: 2rem;
+}
+section#news-feed{
+		@include span-columns(4);
+		@include omega;
+		
+		aside{
+			padding: 0 10px;
+		}
+		
+		p{
+			margin-bottom: 2rem;
+		}
+		span.date{
+			color: $dk;
+			font-size: .8rem;
+			border-bottom: 1px solid $md;
+			display: block;
+			padding-bottom: .2rem;
+			margin-bottom: .5rem;
+					}
+}
+
+
