@@ -4,7 +4,7 @@
 	<div id="lightkeeper-content">
 		<section>
 			<hgroup>
-				<h1>The Lighkeepers</h1>
+				<h1>Lighkeepers</h1>
 				<h2 class="subhead">Your personal healthcare liaison</em></h2>
 			</hgroup>
 			<p>
@@ -49,7 +49,7 @@
 	
 	<div id="lightkeeper-sidebar">
 		<aside>
-			<h3>Why Join The Lightkeepers?</h3>
+			<h3>Why Join Lightkeepers?</h3>
 			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
 			</p>
 			<ul>
