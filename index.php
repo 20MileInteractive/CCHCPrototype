@@ -59,9 +59,9 @@
 					
 					<div id="subscribe">
 						<img src="http://placehold.it/80x120/666/fff/&text=Cover"/>
-						<h4>Subscribe Now</h4>
+						<h4>Publications & Media</h4>
 						<p>Get the latest news with our free publication, <b>The Foundation Times.</b></p>
-						<p><a href="">Subscribe</a>
+						<p><a href="">Learn More</a>
 					</div>
 				
 			</div><!-- end "middle-->

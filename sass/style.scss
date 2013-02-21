@@ -673,6 +673,8 @@ div#events div{
 	
 	section{
 		margin-bottom: 3rem;
+		clear: both;
+		@include clearfix;
 	}
 }
 
@@ -698,3 +700,21 @@ div#events div{
 			}
 			
 }
+
+a.host-events{
+			@include button($md);
+}
+
+
+
+
+#event-thumb{
+	float:left !important;
+	margin-right: 15px;
+}
+
+#event-detail{
+	float:left !important;
+	@include span-columns(8);
+}
+

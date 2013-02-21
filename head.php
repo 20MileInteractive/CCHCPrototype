@@ -79,7 +79,7 @@
 			<a href="give.php">Ways To Give</a>
 			<a href="planned-giving.php">Planned Giving</a>			
 			<a href="lightkeepers.php">Lightkeepers</a>
-			<a href="events.php">Events &amp; Media</a>
+			<a href="events.php">Events</a>
 			<a href="who-we-are.php">About Us</a>
 			<a href="contact.php">Contact Us</a>
 			<a id="search" href="#">Search</a>

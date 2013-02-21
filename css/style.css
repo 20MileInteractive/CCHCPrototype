@@ -950,7 +950,14 @@ div#events div {
     font-weight: normal;
     font-style: italic; }
   #events-list section {
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    clear: both;
+    *zoom: 1; }
+    #events-list section:before, #events-list section:after {
+      content: " ";
+      display: table; }
+    #events-list section:after {
+      clear: both; }
 
 #events-sidebar {
   display: block;
@@ -971,3 +978,55 @@ div#events div {
     margin-top: .2rem; }
   #events-sidebar article {
     margin-bottom: 3rem; }
+
+a.host-events {
+  border: 1px solid #a8a8a8;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #f2f2f2;
+  box-shadow: inset 0 1px 0 0 #f2f2f2;
+  color: #333333;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #cccccc;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #b0b0b0));
+  background-image: -webkit-linear-gradient(top, #cccccc, #b0b0b0);
+  background-image: -moz-linear-gradient(top, #cccccc, #b0b0b0);
+  background-image: -ms-linear-gradient(top, #cccccc, #b0b0b0);
+  background-image: -o-linear-gradient(top, #cccccc, #b0b0b0);
+  background-image: linear-gradient(top, #cccccc, #b0b0b0);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #d6d6d6;
+  -webkit-background-clip: padding-box; }
+  a.host-events:hover:not(:disabled) {
+    -webkit-box-shadow: inset 0 1px 0 0 #d9d9d9;
+    box-shadow: inset 0 1px 0 0 #d9d9d9;
+    cursor: pointer;
+    background-color: #bfbfbf;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bfbfbf), color-stop(100%, #a8a8a8));
+    background-image: -webkit-linear-gradient(top, #bfbfbf, #a8a8a8);
+    background-image: -moz-linear-gradient(top, #bfbfbf, #a8a8a8);
+    background-image: -ms-linear-gradient(top, #bfbfbf, #a8a8a8);
+    background-image: -o-linear-gradient(top, #bfbfbf, #a8a8a8);
+    background-image: linear-gradient(top, #bfbfbf, #a8a8a8); }
+  a.host-events:active:not(:disabled) {
+    border: 1px solid #a8a8a8;
+    -webkit-box-shadow: inset 0 0 8px 4px #a1a1a1, inset 0 0 8px 4px #a1a1a1, 0 1px 1px 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #a1a1a1, inset 0 0 8px 4px #a1a1a1, 0 1px 1px 0 #eeeeee; }
+  a.host-events:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+
+#event-thumb {
+  float: left !important;
+  margin-right: 15px; }
+
+#event-detail {
+  float: left !important;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  #event-detail:last-child {
+    margin-right: 0; }
