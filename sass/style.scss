@@ -171,15 +171,6 @@ a#donate{
 		margin-right:10px;
 		}
 		
-	a{
-		background: #fff;
-		padding: 5px;
-		margin-top: 10px;
-		display: inline-block;
-		width: 100%;
-		text-decoration: none;
-	border-radius:5px;
-	}
 
 }
 footer{
@@ -717,4 +708,26 @@ a.host-events{
 	float:left !important;
 	@include span-columns(8);
 }
+
+// +++++++++++++++++++++++ Media Page
+
+
+
+#media{
+	@include clearfix;
+}
+section.publication{
+		@include span-columns(12);
+		
+		img{
+			float: left;
+			margin-right: 25px;
+		}
+		
+		margin-bottom:1em;
+		padding-bottom: 1em;
+		border-bottom: 1px solid $md;
+
+}
+
 

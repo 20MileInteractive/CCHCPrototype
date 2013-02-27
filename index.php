@@ -45,27 +45,10 @@
 			</div><!--end "top"-->
 </div><!-- end "container"-->
 		
-		<div class="container md">
+	
+<?php include "bottom-ads.php" ?>	
 
-			<div id="middle">
-				
-					<div id="home-news">
-						<h3>Latest News</h3>
-						<p>Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						</p>
-						
-						<p><a href="">Read More</a></p>
-					</div>
-					
-					<div id="subscribe">
-						<img src="http://placehold.it/80x120/666/fff/&text=Cover"/>
-						<h4>Publications & Media</h4>
-						<p>Get the latest news with our free publication, <b>The Foundation Times.</b></p>
-						<p><a href="">Learn More</a>
-					</div>
-				
-			</div><!-- end "middle-->
-		
+
 </div>
 		
 <?php include "footer.php" ?>

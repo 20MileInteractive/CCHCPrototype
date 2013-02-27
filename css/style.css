@@ -247,14 +247,6 @@ a#donate {
   #subscribe img {
     float: left;
     margin-right: 10px; }
-  #subscribe a {
-    background: #fff;
-    padding: 5px;
-    margin-top: 10px;
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    border-radius: 5px; }
 
 footer {
   text-align: center;
@@ -1030,3 +1022,25 @@ a.host-events {
   width: 65.88078%; }
   #event-detail:last-child {
     margin-right: 0; }
+
+#media {
+  *zoom: 1; }
+  #media:before, #media:after {
+    content: " ";
+    display: table; }
+  #media:after {
+    clear: both; }
+
+section.publication {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #cccccc; }
+  section.publication:last-child {
+    margin-right: 0; }
+  section.publication img {
+    float: left;
+    margin-right: 25px; }
