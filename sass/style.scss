@@ -693,7 +693,7 @@ div#events div{
 }
 
 a.host-events{
-			@include button($md);
+	@include button (shiny, $dk);
 }
 
 
@@ -707,6 +707,10 @@ a.host-events{
 #event-detail{
 	float:left !important;
 	@include span-columns(8);
+	
+	a:last-child{
+	@include button (shiny, $dk);
+	}
 }
 
 // +++++++++++++++++++++++ Media Page
