@@ -38,6 +38,20 @@
 			<div id="event-thumb"><img src="http://placehold.it/175x125"/>
 			</div>
 			<div id="event-detail">
+				<h3>Summer Evening Gala</h3>
+				<h4>Saturday, August 3, 2013</h4>
+				<p>Highfield Hall, Falmouth, MA
+				</p>
+				<p><a href="">See Event Details</a></p>
+			</div>
+			
+			</section>
+
+
+			<section>
+			<div id="event-thumb"><img src="http://placehold.it/175x125"/>
+			</div>
+			<div id="event-detail">
 				<h3>Eastward Ho! Auction & Dinner</h3>
 				<h4>August 8, 2013</h4>
 				<p>Wequassett Resort and Golf Club, Chatham
@@ -48,18 +62,6 @@
 			
 			</section>
 
-			<section>
-			<div id="event-thumb"><img src="http://placehold.it/175x125"/>
-			</div>
-			<div id="event-detail">
-				<h3>Summer Evening Gala</h3>
-				<h4>Saturday, August 3, 2013</h4>
-				<p>Highfield Hall, Falmouth, MA
-				</p>
-				<p><a href="">See Event Details</a></p>
-			</div>
-			
-			</section>
 
 
 			<section>
