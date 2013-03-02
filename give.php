@@ -52,7 +52,7 @@
 	</section>
 
 	<section>
-		<h2><a class="show-gifts" href="">Gifts of Gratitude<span>&#x25BC;</span></a></h2>
+		<h2><a class="show-gifts" href="">Matching Gifts<span>&#x25BC;</span></a></h2>
 			<div class="toggle">
 
 				<p>
@@ -72,6 +72,18 @@
 			
 			</div>
 	</section>
+
+	<section>
+		<h2><a class="show-gifts" href="">Gifts of Assets, Securities, Retirement and Insurance Plans</a></h2>
+			<div class="toggle">
+
+				<p>
+					Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+				</p>
+			
+			</div>
+	</section>
+
 
 	<section>
 		<h2><a class="show-gifts" href="">Host an Event<span>&#x25BC;</span></a></h2>

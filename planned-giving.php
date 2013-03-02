@@ -17,7 +17,7 @@
 
 <div class="container" id="planned-gift-types">
 	<section>
-		<h2><a class="show-gifts" href="">Gifts That Protect Your Assets <span>&#x25BC;</span></a></h2>
+		<h2><a class="show-gifts" href="">Remembering CCHC in your will or trust <span>&#x25BC;</span></a></h2>
 			<div class="toggle">
 			<p>Overview description goes here. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Donec sed odio dui.</p>
 			
@@ -67,7 +67,7 @@
 	</section>
 
 	<section>
-		<h2><a class="show-gifts" href="">Gifts That Provide Tax Benefits <span>&#x25BC;</span></a></h2>
+		<h2><a class="show-gifts" href="">Gifts that protect your assets <span>&#x25BC;</span></a></h2>
 			<div class="toggle">
 			<p>Overview description goes here. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Donec sed odio dui.</p>
 			
@@ -117,7 +117,7 @@
 	</section>
 
 	<section>
-		<h2><a class="show-gifts" href="">Another Gift Category <span>&#x25BC;</span></a></h2>
+		<h2><a class="show-gifts" href="">Gifts that pay you income <span>&#x25BC;</span></a></h2>
 			<div class="toggle">
 			<p>Overview description goes here. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Donec sed odio dui.</p>
 			
@@ -167,7 +167,105 @@
 	</section>
 
 
+	<section>
+		<h2><a class="show-gifts" href="">For Professional Advisors <span>&#x25BC;</span></a></h2>
+			<div class="toggle">
+			<p>Overview description goes here. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Donec sed odio dui.</p>
+			
+				<div class="gift">
+				<p class="gift-detail">
+				<span>Charitable Lead Trust</span>
+				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+				
+				<p class="gift-benefit">
+				<span>Benefits</span>
+				&#x2714; Benefits Goes Here<br/>
+				&#x2714; Another Benefit<br/>
+				&#x2714; Really long benefit goes here
+				</p>
+				</div>
+				
+				
+				<div class="gift">
+				<p class="gift-detail">
+				<span>Retained Life Estate</span>
+				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+				
+				<p class="gift-benefit">
+				<span>Benefits</span>
+				&#x2714; Benefits Goes Here<br/>
+				&#x2714; Another Benefit<br/>
+				&#x2714; Really long benefit goes here
+				</p>
+				</div>
 	
+	
+				<div class="gift">
+				<p class="gift-detail">
+				<span>Another Gift Type</span>
+				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+				
+				<p class="gift-benefit">
+				<span>Benefits</span>
+				&#x2714; Benefits Goes Here<br/>
+				&#x2714; Another Benefit<br/>
+				&#x2714; Really long benefit goes here
+				</p>
+				</div>
+
+			
+			</div>
+	</section>
+	
+	<section>
+		<h2><a class="show-gifts" href="">Gift Calculator <span>&#x25BC;</span></a></h2>
+			<div class="toggle">
+			<p>Overview description goes here. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Donec sed odio dui.</p>
+			
+				<div class="gift">
+				<p class="gift-detail">
+				<span>Charitable Lead Trust</span>
+				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+				
+				<p class="gift-benefit">
+				<span>Benefits</span>
+				&#x2714; Benefits Goes Here<br/>
+				&#x2714; Another Benefit<br/>
+				&#x2714; Really long benefit goes here
+				</p>
+				</div>
+				
+				
+				<div class="gift">
+				<p class="gift-detail">
+				<span>Retained Life Estate</span>
+				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+				
+				<p class="gift-benefit">
+				<span>Benefits</span>
+				&#x2714; Benefits Goes Here<br/>
+				&#x2714; Another Benefit<br/>
+				&#x2714; Really long benefit goes here
+				</p>
+				</div>
+	
+	
+				<div class="gift">
+				<p class="gift-detail">
+				<span>Another Gift Type</span>
+				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+				
+				<p class="gift-benefit">
+				<span>Benefits</span>
+				&#x2714; Benefits Goes Here<br/>
+				&#x2714; Another Benefit<br/>
+				&#x2714; Really long benefit goes here
+				</p>
+				</div>
+
+			
+			</div>
+	</section>
 	
 	
 </div>
