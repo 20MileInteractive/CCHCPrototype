@@ -12,7 +12,7 @@
 				<h4>June 14-15, 2013</h4>
 				<p>Eastward Ho Country Club, Chatham
 				</p>
-								<p><a href="">See Event Details</a></p>
+								<p><a href="event-detail.php">See Event Details</a></p>
 
 			</div>
 			
@@ -101,6 +101,8 @@ Topic: Common Foot Problems and Treatments<br/>
 	</div><!-- end events list-->
 
 	<div id="events-sidebar">
+					<a class="host-events" href="host-an-event.php">Learn how to organize an event</a>
+
 		<section id="publications">
 			<h3>Community Fundraisers</h3>
 				<article>
@@ -128,7 +130,6 @@ Topic: Common Foot Problems and Treatments<br/>
 					<a href="">Learn More</a>
 				</article>
 				
-				<a class="host-events" href="">Learn how to organize an event</a>
 
 			
 		</section>

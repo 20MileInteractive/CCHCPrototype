@@ -694,6 +694,7 @@ div#events div{
 
 a.host-events{
 	@include button (shiny, $dk);
+	display: block;
 }
 
 
@@ -712,6 +713,45 @@ a.host-events{
 	@include button (shiny, $dk);
 	}
 }
+
+
+#event-hosting-page{
+	a{
+		@include button(shiny,$dk);
+	}
+}
+
+// +++++++++++++++++++++++ Events Detail Page
+
+#event-detail-page{
+	@include clearfix;
+	
+	img{
+		float: right;
+		margin: 0 0 25px 25px;
+	}
+	
+	span{
+	display: block;
+	font-weight: bold;
+	margin-top:1rem;
+	}
+	
+}
+
+#event-sponsors{
+	background: $lt;
+	text-align: center;
+	padding: 1rem 0 2rem;
+	
+	img{
+		margin: 0 .5rem;
+	}
+	
+}
+
+
+
 
 // +++++++++++++++++++++++ Media Page
 
