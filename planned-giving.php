@@ -170,100 +170,18 @@
 	<section>
 		<h2><a class="show-gifts" href="">For Professional Advisors <span>&#x25BC;</span></a></h2>
 			<div class="toggle">
-			<p>Overview description goes here. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Donec sed odio dui.</p>
-			
-				<div class="gift">
-				<p class="gift-detail">
-				<span>Charitable Lead Trust</span>
-				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-				
-				<p class="gift-benefit">
-				<span>Benefits</span>
-				&#x2714; Benefits Goes Here<br/>
-				&#x2714; Another Benefit<br/>
-				&#x2714; Really long benefit goes here
-				</p>
-				</div>
-				
-				
-				<div class="gift">
-				<p class="gift-detail">
-				<span>Retained Life Estate</span>
-				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-				
-				<p class="gift-benefit">
-				<span>Benefits</span>
-				&#x2714; Benefits Goes Here<br/>
-				&#x2714; Another Benefit<br/>
-				&#x2714; Really long benefit goes here
-				</p>
-				</div>
-	
-	
-				<div class="gift">
-				<p class="gift-detail">
-				<span>Another Gift Type</span>
-				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-				
-				<p class="gift-benefit">
-				<span>Benefits</span>
-				&#x2714; Benefits Goes Here<br/>
-				&#x2714; Another Benefit<br/>
-				&#x2714; Really long benefit goes here
-				</p>
-				</div>
-
-			
+			<p>
+				Under Construction. Please return soon. 
+			</p>
 			</div>
 	</section>
 	
 	<section>
 		<h2><a class="show-gifts" href="">Gift Calculator <span>&#x25BC;</span></a></h2>
 			<div class="toggle">
-			<p>Overview description goes here. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Donec sed odio dui.</p>
-			
-				<div class="gift">
-				<p class="gift-detail">
-				<span>Charitable Lead Trust</span>
-				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-				
-				<p class="gift-benefit">
-				<span>Benefits</span>
-				&#x2714; Benefits Goes Here<br/>
-				&#x2714; Another Benefit<br/>
-				&#x2714; Really long benefit goes here
-				</p>
-				</div>
-				
-				
-				<div class="gift">
-				<p class="gift-detail">
-				<span>Retained Life Estate</span>
-				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-				
-				<p class="gift-benefit">
-				<span>Benefits</span>
-				&#x2714; Benefits Goes Here<br/>
-				&#x2714; Another Benefit<br/>
-				&#x2714; Really long benefit goes here
-				</p>
-				</div>
-	
-	
-				<div class="gift">
-				<p class="gift-detail">
-				<span>Another Gift Type</span>
-				Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-				
-				<p class="gift-benefit">
-				<span>Benefits</span>
-				&#x2714; Benefits Goes Here<br/>
-				&#x2714; Another Benefit<br/>
-				&#x2714; Really long benefit goes here
-				</p>
-				</div>
-
-			
+			<p>
+				Under Construction. Please return soon. 
+			</p>				
 			</div>
 	</section>
 	
